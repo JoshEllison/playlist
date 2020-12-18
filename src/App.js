@@ -24,7 +24,7 @@ class App extends Component {
       time: ''
     }
     this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    // this.handleSubmit = this.handleSubmit.bind(this)
   }
   
   // handles input change

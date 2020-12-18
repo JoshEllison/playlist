@@ -4,10 +4,14 @@
 // packages
 import React, { Component } from 'react';
 
+// components
+import Song from './Song'
+
 // ===================
 // COMPONENT
 // ===================
 class Playlist extends Component {
+  
   render() {
     return (
       <div className='playlist'>
@@ -15,11 +19,10 @@ class Playlist extends Component {
         <div className='songs'>
           {this.props.playlist.songs.map((song, index) => {
             return (
-              <div className='song' key={index}>
-                <h1>{song.title}</h1>
-                <h2>{song.artist}</h2>
-                <h3>{song.time}</h3>
-              </div>
+              <Song 
+                key={index}
+                song={song} 
+              />
             )
           })}
         </div>
